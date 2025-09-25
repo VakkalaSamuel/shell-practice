@@ -26,15 +26,16 @@ do
     {
       "Comment": "Updating record set"
       ,"Changes": [{
-          "Action": "UPSERT"
+        "Action": "UPSERT"
           ,"ResourceRecordSet": {
-            "Name": "'$RECORD_NAME'"
-            ,"Type": "A",
-            ,"TTL": 1,
+              "Name"          : "'$RECORD_NAME'"
+            ,"Type"           : "A"
+            ,"TTL"            : 1
             ,"ResourceRecords": [{
-                "Value": "'$IP'"
+                "Value"       : "'$IP'"
               }]
-          }
+        }
         }]
     }
+    '
 done
